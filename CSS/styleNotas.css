@@ -1,0 +1,209 @@
+#disciplinaAdd,
+#btnSalvar,
+#btnSalvar1 {
+  background: var(--botao-bg-color);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#disciplinaAdd:hover,
+#btnSalvar:hover,
+#btnSalvar1:hover {
+  background: var(--botao-bg-hover-color);
+  transition: 0.5s;
+}
+
+#btnSalvar,
+#btnSalvar1 {
+  width: 100px;
+}
+
+.active {
+  display: flex;
+}
+
+.span-required {
+  font-size: 0.7rem;
+  margin: 0px;
+  color: var(--span-textcolor-required);
+  display: none;
+}
+
+.content {
+  overflow: auto;
+  background-color: var(--button-content-bg-color);
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+#header-titulo{
+  color: var(--other-font-color);
+}
+
+.header {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 12px;
+}
+
+.header span {
+  font-weight: 900;
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.divTable {
+  width: auto;
+  overflow-x: auto; /* Adicionando rolagem horizontal quando necessário */
+  margin-top: 20px;
+}
+
+table {
+  width: 100%; /* Isso permite que a tabela cresça para a largura máxima da div */
+  min-width: 770px; /* Largura mínima da tabela para evitar que ela fique muito estreita */
+  border-spacing: 10px;
+  word-break: break-all;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--bg-margin-bot-color);
+}
+
+tbody tr td {
+  vertical-align: text-top;
+  padding: 6px;
+  max-width: 50px;
+  text-align: center;
+  color: var(--other-font-color);
+}
+
+thead tr th {
+  padding: 5px;
+  text-align: start;
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--color-text-table);
+}
+
+tbody tr {
+  margin-bottom: 50px;
+}
+
+thead tr th.acao {
+  width: 100px;
+  text-align: center;
+}
+
+tbody tr td.acao {
+  text-align: center;
+}
+
+td button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+td button i {
+  font-size: 25px;
+}
+
+td button i:first-child {
+  margin-right: 10px;
+}
+
+th,
+td {
+  border-bottom: 2px solid var(--bg-margin-bot-color);
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.24);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /*gap: 15px;*/
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.modal label {
+  font-size: 14px;
+  width: 100%;
+}
+
+.modal input {
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 25px;
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal 0.4s;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Estilos para as imagens */
+img.edit-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: var(--other-font-color);
+}
+
+img.remove-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: var(--other-font-color);
+}
+
+td button i:first-child {
+  color: var(--other-font-color);
+}
+
+@media screen and (max-width: 600px) {
+  .modal {
+    width: 80%;
+  }
+}

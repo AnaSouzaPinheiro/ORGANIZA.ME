@@ -1,0 +1,167 @@
+.area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid rgba(56, 56, 56, 0.575);
+  border-radius: 1px;
+  padding: 8px;
+  font-size: var(--text-font-size);
+}
+
+input:focus {
+  box-shadow: 0;
+  outline: 0;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.header {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 12px;
+}
+
+.header span {
+  font-weight: 900;
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.divTable {
+  width: auto;
+  height: inherit;
+  overflow: auto;
+}
+
+.content {
+  background-color: var(--button-content-bg-color);
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 20px;
+  overflow: auto;
+  height: 80%;
+}
+
+#notes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.notes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.note {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  color: var(--other-font-color);
+  border: 2px solid #818385;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.note h2 {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#visualizar {
+  background: var(--botao-bg-color);
+  border: none;
+  color: white;
+  border-radius: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn {
+  background: var(--botao-bg-color);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--botao-bg-hover-color);
+  transition: 0.5s;
+}
+
+ul li img:first-child {
+  margin-left: 20px;
+  margin-right: 8px;
+}
+
+ul li img:last-child {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+ul li {
+  color: var(--other-font-color);
+  margin: 10px 0;
+}
+
+#listaDisciplinas {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#listaDisciplinas img {
+  width: 32px;
+  cursor: pointer;
+}

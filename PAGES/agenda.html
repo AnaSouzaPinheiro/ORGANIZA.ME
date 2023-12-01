@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORGANIZA.ME | Agenda</title>
+  <link rel="icon" href="../IMG/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:opsz,wght@9..40,100&family=Poppins&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description"
+    content="Stay organized with our user-friendly Calendar featuring events, reminders, and a customizable interface. Built with HTML, CSS, and JavaScript. Start scheduling today!" />
+  <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/agenda.css">
+  <link rel="stylesheet" href="../CSS/styleNotas.css">
+  <link rel="stylesheet" href="../CSS/temas.css">
+  <link rel="stylesheet" href="../CSS/agenda.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="area">
+      <h1>Agenda</h1>
+    </div>
+
+    <div class="menu">
+      <nav>
+        <a href="anotacoes.html"><button class="raise">Anotações</button></a>
+        <a href="notas.html"><button class="raise">Notas</button></a>
+        <a href="faltas.html"><button class="raise">Faltas</button></a>
+        <a href="agenda.html"><button class="raise">Agenda</button></a>
+        <a href="programacao.html"><button class="raise">Programação</button></a>
+        <button type="button" class="raise" id="personalizar"><img class="rgb" src="../IMG/rgb.png" alt="">Mudar
+          tema</button>
+      </nav>
+        <p class="arredar">Arraste o menu para o lado</p>
+    </div>
+
+    <div class="content">
+      <div class="container2">
+        <div class="left">
+          <div class="calendar">
+            <div class="month">
+              <i class="fas fa-angle-left prev"></i>
+              <div class="date">dezembro 2015</div>
+              <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+              <div>Dom</div>
+              <div>Seg</div>
+              <div>Ter</div>
+              <div>Qua</div>
+              <div>Qui</div>
+              <div>Sex</div>
+              <div>Sáb</div>
+            </div>
+            <div class="days"></div>
+            <div class="goto-today">
+              <div class="goto">
+                <input type="text" placeholder="mm/yyyy" class="date-input" />
+                <button class="goto-btn">Go</button>
+              </div>
+              <button class="today-btn">Hoje</button>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="today-date">
+            <div class="event-day">qua</div>
+            <div class="event-date">12 de dezembro 2022</div>
+          </div>
+          <div class="events"></div>
+          <div class="add-event-wrapper">
+            <div class="add-event-header">
+              <div class="title">Adicionar evento</div>
+              <i class="fas fa-times close"></i>
+            </div>
+            <div class="add-event-body">
+              <div class="add-event-input">
+                <input type="text" placeholder="Nome do evento" class="event-name" />
+              </div>
+              <div class="add-event-input">
+                <input type="text" placeholder="Hora que começa" class="event-time-from" />
+              </div>
+              <div class="add-event-input">
+                <input type="text" placeholder="Hora que termina" class="event-time-to" />
+              </div>
+            </div>
+            <div class="add-event-footer">
+              <button class="add-event-btn">Adicionar evento</button>
+            </div>
+          </div>
+        </div>
+        <button class="add-event">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+      <div class="credits">
+        <p>
+          Créditos:
+        <a href="https://codepen.io/fabwaseem/pen/oNMMYOE">Code Pen</a>
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="back">
+    <div class="temas">
+      <p class="fechar">X</p>
+      <h2>Escolha um tema</h2>
+      <div class="cont">
+        <div class="normal"></div>
+        <div class="escuro"></div>
+        <div class="verde"></div>
+      </div>
+      <div class="cont">
+        <div class="laranja"></div>
+        <div class="rosa"></div>
+        <div class="neutro"></div>
+      </div>
+      <div class="cont">
+        <div class="roxo"></div>
+        <div class="escuro2"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../SCRIPT/agenda.js"></script>
+  <script src="../SCRIPT/changeTheme.js"></script>
+</body>
+
+</html>

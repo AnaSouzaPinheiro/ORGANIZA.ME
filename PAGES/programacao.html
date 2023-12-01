@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORGANIZA.ME | Programação</title>
+  <link rel="icon" href="../IMG/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:opsz,wght@9..40,100&family=Poppins&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/styleNotas.css" />
+  <link rel="stylesheet" href="../CSS/temas.css" />
+  <link rel="stylesheet" href="../CSS/programacao.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="area">
+      <h1>Programação</h1>
+    </div>
+
+    <div class="menu">
+      <nav>
+        <a href="anotacoes.html"><button class="raise">Anotações</button></a>
+        <a href="notas.html"><button class="raise">Notas</button></a>
+        <a href="faltas.html"><button class="raise">Faltas</button></a>
+        <a href="agenda.html"><button class="raise">Agenda</button></a>
+        <a href="programacao.html"><button class="raise">Programação</button></a>
+        <button type="button" class="raise" id="personalizar"><img class="rgb" src="../IMG/rgb.png" alt="">Mudar
+          tema</button>
+      </nav>
+        <p class="arredar">Arraste o menu para o lado</p>
+    </div>
+    
+    <div class="content">
+      <div class="separar">
+        <div class="topicos">
+          <h2>Linguagens</h2>
+          <p class="Ltitle" onclick="toggleJava()">
+            Java <img class="seta" src="../IMG/acento-circunflexo.png" alt="" />
+          </p>
+          <div class="topJava">
+            <p class="topis">Programação Orientada a Objetos (POO)</p>
+            <p class="topis">Estruturas de Controle (if, else, switch)</p>
+            <p class="topis">
+              Estruturas de Repetição (for, while, do-while)
+            </p>
+            <p class="topis">Tratamento de Exceções</p>
+            <p class="topis">Coleções (Listas, Mapas, Conjuntos)</p>
+            <p class="topis">Threads e Concorrência</p>
+            <p class="topis">JDBC (Java Database Connectivity)</p>
+            <p class="topis">Frameworks populares (Spring, Hibernate)</p>
+          </div>
+          <p class="Ltitle" onclick="togglePython()">
+            Python
+            <img class="seta1" src="../IMG/acento-circunflexo.png" alt="" />
+          </p>
+          <div class="topPython">
+            <p class="topis">
+              Estruturas de Dados (Listas, Tuplas, Dicionários)
+            </p>
+            <p class="topis">Controle de Fluxo (if, else, elif)</p>
+            <p class="topis">Loops (for, while)</p>
+            <p class="topis">Funções e Escopo</p>
+            <p class="topis">Programação Orientada a Objetos (POO)</p>
+            <p class="topis">Manipulação de Arquivos</p>
+            <p class="topis">
+              Bibliotecas populares (NumPy, Pandas, Requests)
+            </p>
+            <p class="topis">Django (para desenvolvimento web)</p>
+          </div>
+          <p class="Ltitle" onclick="toggleRuby()">
+            Ruby <img class="seta2" src="../IMG/acento-circunflexo.png" alt="" />
+          </p>
+          <div class="topRuby">
+            <p class="topis">Programação Orientada a Objetos (POO)</p>
+            <p class="topis">Blocos e Procs</p>
+            <p class="topis">RubyGems e Gerenciamento de Pacotes</p>
+            <p class="topis">
+              Framework Ruby on Rails (para desenvolvimento web)
+            </p>
+            <p class="topis">Metaprogramação</p>
+            <p class="topis">Testes (com RSpec, por exemplo)</p>
+          </div>
+          <p class="Ltitle" onclick="toggleCpp()">
+            C++ <img class="seta3" src="../IMG/acento-circunflexo.png" alt="" />
+          </p>
+          <div class="topCpp">
+            <p class="topis">Programação Orientada a Objetos (POO)</p>
+            <p class="topis">Estruturas de Dados (Pilhas, Filas, Listas)</p>
+            <p class="topis">Manipulação de Ponteiros</p>
+            <p class="topis">Templates</p>
+            <p class="topis">Tratamento de Exceções</p>
+            <p class="topis">Algoritmos e Estruturas de Dados Padrão (STL)</p>
+            <p class="topis">Concorrência e Multithreading</p>
+          </div>
+          <p class="Ltitle" onclick="toggleJavaScript()">
+            Javascript
+            <img class="seta4" src="../IMG/acento-circunflexo.png" alt="" />
+          </p>
+          <div class="topJavaScript">
+            <p class="topis">Manipulação do DOM</p>
+            <p class="topis">Eventos e Manipulação de Eventos</p>
+            <p class="topis">
+              Funções de Ordem Superior (Higher-Order Functions)
+            </p>
+            <p class="topis">AJAX e Fetch API</p>
+            <p class="topis">Promises e Async/Await</p>
+            <p class="topis">Frameworks populares (React, Angular, Vue)</p>
+            <p class="topis">
+              Node.js e Express (para desenvolvimento do lado do servidor)
+            </p>
+            <p class="topis">JSON e RESTful APIs</p>
+          </div>
+          <p class="Ltitle" onclick="togglePHP()">
+            PHP <img class="seta5" src="../IMG/acento-circunflexo.png" alt="" />
+          </p>
+          <div class="topPHP">
+            <p class="topis">Manipulação de Strings</p>
+            <p class="topis">Trabalhando com Formulários</p>
+            <p class="topis">Cookies e Sessões</p>
+            <p class="topis">Banco de Dados (MySQL, por exemplo)</p>
+            <p class="topis">Frameworks populares (Laravel, Symfony)</p>
+            <p class="topis">Manipulação de Arquivos</p>
+            <p class="topis">Segurança em PHP</p>
+          </div>
+        </div>
+        
+        <div class="livros">
+          <h2>Livros</h2>
+          <div class="grid-container">
+            
+            <img
+              src="https://a-static.mlcdn.com.br/800x560/praticas-de-c-programacao-orientada-por-objetos/zambonibooks/50474/cf2d46a86d97fd2ab362bd08ebf51d1c.jpeg"
+              alt="Práticas de C#" />
+            <img src="https://http2.mlstatic.com/D_NQ_NP_876891-MLB50986181711_082022-O.webp" alt="Programando em em Java" />
+            <img src="https://img.ibxk.com.br/2020/04/08/08164430719274.jpg?ims=fit-in/220x220/filters:fill(ffffff)" alt="Introdução à programação em Python"/>
+            <img src="https://conteudo.saraivaeducacao.com.br/wp-content/uploads/2022/07/livros-de-programacao-3.png" />
+            <img src="https://s3.novatec.com.br/capas-ampliadas/capa-ampliada-9788575224458.jpg" alt="Programação java para web" />
+            <img src="https://m.media-amazon.com/images/P/B08M48DR48.01._SCLZZZZZZZ_SX500_.jpg" alt="Algoritmos Funcionais" />
+            <img src="https://s3.novatec.com.br/capas-ampliadas/capa-ampliada-857522042X.jpg" alt="Programando em C++" />
+            <img src="https://m.media-amazon.com/images/I/41ZKO2ww+oL.jpg" alt="PHP" />
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="back">
+    <div class="temas">
+      <p class="fechar">X</p>
+      <h2>Escolha um tema</h2>
+      <div class="cont">
+        <div class="normal"></div>
+        <div class="escuro"></div>
+        <div class="verde"></div>
+      </div>
+      <div class="cont">
+        <div class="laranja"></div>
+        <div class="rosa"></div>
+        <div class="neutro"></div>
+      </div>
+      <div class="cont">
+        <div class="roxo"></div>
+        <div class="escuro2"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../SCRIPT/programacao.js"></script>
+  <script src="../SCRIPT/changeTheme.js"></script>
+</body>
+
+</html>

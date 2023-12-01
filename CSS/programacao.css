@@ -1,0 +1,127 @@
+.content {
+  overflow: auto;
+  height: 80%;
+}
+
+.separar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.topicos {
+  width: 50%;
+}
+
+.livros {
+  width: 50%;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.grid-container img {
+  width: 180px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.separar h2 {
+  color: var(--other-font-color);
+  font-size: 30px;
+}
+
+.Ltitle {
+  color: var(--font-topis);
+  background-color: var(--background-color);
+  padding: 10px;
+  margin: 15px 50px 15px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.topJava {
+  display: none;
+  overflow: hidden;
+}
+
+.topPython {
+  display: none;
+  overflow: hidden;
+}
+
+.topCpp {
+  display: none;
+  overflow: hidden;
+}
+
+.topRuby {
+  display: none;
+  overflow: hidden;
+}
+
+.topJavaScript {
+  display: none;
+  overflow: hidden;
+}
+
+.topPHP {
+  display: none;
+  overflow: hidden;
+}
+
+.topis {
+  background: #7d7d7d87;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-top: 10px;
+  color: var(--font-topis);
+  transition: transform 0.3s ease-in-out;
+}
+
+.seta, .seta1, .seta2, .seta3, .seta4, .seta5 {
+  width: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.virada {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 950px) {
+  .separar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Ltitle {
+    margin: 15px 0;
+  }
+
+  .topicos {
+    width: 100%;
+  }
+
+  .livros {
+    width: 100%;
+  }
+
+  .grid-container {
+    justify-content: center;
+  }
+
+  .separar h2 {
+    text-align: center;
+  }
+
+  .topis {
+    margin-right: 0;
+  }
+}

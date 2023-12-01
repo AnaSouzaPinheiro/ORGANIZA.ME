@@ -1,0 +1,123 @@
+.rgb {
+  width: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.show {
+  display: flex;
+}
+
+.back {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0 0 0 / 11%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: flex-end;
+}
+
+.temas {
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.normal {
+  background: #4682a9;
+  color: #4682a9;
+  border: 3px solid #376786;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.verde {
+  background: #02c39aff;
+  color: #02c39aff;
+  border: 3px solid rgb(2, 155, 122);
+  border-radius: 50px;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.escuro {
+  background: #001233ff;
+  color: #001233ff;
+  border: 3px solid rgb(0, 6, 17);
+  border-radius: 50px;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.escuro2 {
+  background: #09001e;
+  color: #09001e;
+  border: 3px solid #000000;
+  border-radius: 50px;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.laranja {
+  background: #f25c54ff;
+  color: #f25c54ff;
+  border: 3px solid rgb(165, 63, 58);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.rosa {
+  background: #f4acb7ff;
+  color: #f4acb7ff;
+  border: 3px solid rgb(207, 144, 154);
+  border-radius: 50px;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.neutro {
+  background: #d4a373ff;
+  color: #d4a373ff;
+  border: 3px solid rgb(175, 135, 95);
+  border-radius: 50px;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.roxo {
+  background: #dab6fcff;
+  color: #dab6fcff;
+  border: 3px solid rgb(182, 151, 211);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.fechar {
+  font-weight: bold;
+  cursor: pointer;
+}

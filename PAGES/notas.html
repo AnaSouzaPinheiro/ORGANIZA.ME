@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORGANIZA.ME | Notas</title>
+  <link rel="icon" href="../IMG/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:opsz,wght@9..40,100&family=Poppins&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/styleNotas.css" />
+  <link rel="stylesheet" href="../CSS/temas.css">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="area">
+      <h1>Notas</h1>
+      <button id="disciplinaAdd">+ Disciplina</button>
+    </div>
+
+    <div class="menu">
+      <nav>
+        <a href="anotacoes.html"><button class="raise">Anotações</button></a>
+        <a href="notas.html"><button class="raise">Notas</button></a>
+        <a href="faltas.html"><button class="raise">Faltas</button></a>
+        <a href="agenda.html"><button class="raise">Agenda</button></a>
+        <a href="programacao.html"><button class="raise">Programação</button></a>
+        <button type="button" class="raise" id="personalizar"><img class="rgb" src="../IMG/rgb.png" alt="">Mudar tema</button>
+      </nav>
+        <p class="arredar">Arraste o menu para o lado</p>
+    </div>
+
+    <div class="content">
+      <div class="header">
+        <span id="usuario-logado"></span>
+        <span id="header-titulo">Controle das notas</span>
+      </div>
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Disciplina</th>
+              <th>Prova I</th>
+              <th>Prova II</th>
+              <th>Prova III</th>
+              <th>Trabalho</th>
+              <th>Total</th>
+              <th class="acao">Editar</th>
+              <th class="acao">Excluir</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="back">
+      <div class="temas">
+        <p class="fechar">X</p>
+        <h2>Escolha um tema</h2>
+        <div class="cont">
+          <div class="normal"></div>
+          <div class="escuro"></div>
+          <div class="verde"></div>
+        </div>
+        <div class="cont">
+          <div class="laranja"></div>
+          <div class="rosa"></div>
+          <div class="neutro"></div>
+        </div>
+        <div class="cont">
+          <div class="roxo"></div>
+          <div class="escuro2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-container">
+      <form class="modal">
+        <label for="disciplina">Disciplina</label>
+        <input id="disciplina" type="text" class="input required" />
+        <span class="span-required"></span>
+
+        <label for="provaI">Nota da prova I</label>
+        <input id="provaI" type="number" class="input required" />
+        <span class="span-required"></span>
+
+        <label for="provaII">Nota da prova II</label>
+        <input id="provaII" type="number" class="input required" />
+        <span class="span-required"></span>
+
+        <label for="provaIII">Nota da prova III</label>
+        <input id="provaIII" type="number" class="input required" />
+        <span class="span-required"></span>
+
+        <label for="trabalho">Nota no trabalho</label>
+        <input id="trabalho" type="number" class="input required" />
+        <span class="span-required"></span>
+
+        <button id="btnSalvar" type="submit">Salvar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../SCRIPT/changeTheme.js"></script>
+  <script src="../SCRIPT/script.js"></script>
+</body>
+
+</html>
